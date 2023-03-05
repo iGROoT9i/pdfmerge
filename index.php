@@ -46,5 +46,8 @@ if (isset($_POST['uploadBtn']) && $_POST['uploadBtn'] == 'Upload')
     $message .= 'Error:' . $_FILES['uploadedFile']['error'];
   }
 }
+
+
 $_SESSION['message'] = $message;
-header("Location: index.php");
+
+header("Location: otro.php");
